@@ -18,7 +18,7 @@
       <label for="toggler" class="fas fa-bars" ></label>
       <a href="#" class="logo">Musischool<span>.</span></a>
       <nav id="nav" class="navbar">
-        <a href="#nosotros">Nosotros</a>
+        <a href="#nosotros" class="nav_nosotros">Nosotros</a>
         <a href="#propuestaEducativa">Propuesta Educativa</a>
         <a href="#conciertos">Conciertos</a>
         <a href="#contacto">Contacto</a>
@@ -108,6 +108,7 @@
           semper, purus mi posuere nibh, pretium tempus ante leo et ipsum.
           Integer ornare fermentum condimentum.
         </p>
+        
       <div class="container">
 
       </div>
@@ -126,12 +127,11 @@
           semper, purus mi posuere nibh, pretium tempus ante leo et ipsum.
           Integer ornare fermentum condimentum.
         </p>
-        <div id="map-container">
+        
+        <div id="map-form-container">
           <iframe  id="map"src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d282.0056501499541!2d-58.38168342396399!3d-34.603672075031525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1684026064329!5m2!1sen!2sar"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-
-        <form action="" method="get" id="formulario">
+          
+          <form action="" method="get" id="formulario">
             <div class="formulario_nombre">
               <label for="nombre">Nombre:</label>
               <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre aquí" />
@@ -148,8 +148,12 @@
               <label for="mensaje">Mensaje:</label>
               <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe el motivo de tu consulta"></textarea>
             </div>
-            <button type="submit">Enviar</button>
+            <button class="button" type="submit"><span>Enviar</span> </button>
           </form>
+        </div>
+
+
+        
       </div>
     </main>
     <!-- fin Main -->

@@ -7,4 +7,7 @@ window.addEventListener("scroll", function() {
     }
   });
 
- 
+  function changeColor(newColor) {
+    const elem = document.getElementById("nombre");
+    elem.style.color = red;
+  }
