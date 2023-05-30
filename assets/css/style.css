@@ -101,7 +101,6 @@ footer {
 footer h3 {
   font-size: 20pt;
   margin: 20px;
-
 }
 .home {
   display: flex;
@@ -363,7 +362,7 @@ footer h3 {
   background-size: auto;
   background-position-x: center;
   background-position-y: -60rem;
-  background-image: url(/trabajo_final/assets/Images/7930.jpg);
+  background-image: url(../Images/7930.jpg);
 }
 
 #contacto h2 {
@@ -402,7 +401,6 @@ footer h3 {
   border: 2px grey solid;
   margin: 10px 115px 0px 115px;
 }
-
 
 @media (max-width: 991px) {
   html {
@@ -461,7 +459,6 @@ footer h3 {
     font-size: 3rem;
   }
 
-
   footer {
     flex-direction: column;
     align-items: center;
@@ -473,7 +470,7 @@ footer h3 {
     margin: 10px;
   }
 
-  .social-media{
+  .social-media {
     gap: 15px;
     font-size: 10pt;
   }
@@ -499,7 +496,7 @@ textarea {
 
 #saxo {
   background-color: grey;
-  background-image: url(/trabajo_final2/Musischool2/assets/images/Saxo.jpeg);
+  background-image: url(../images/Saxo.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -507,7 +504,7 @@ textarea {
 
 #piano {
   background-color: grey;
-  background-image: url(/trabajo_final2/Musischool2/assets/images/Piano2.jpg);
+  background-image: url(../images/Piano2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -515,7 +512,7 @@ textarea {
 
 #guitarra {
   background-color: grey;
-  background-image: url(/trabajo_final2/Musischool2/assets/images/guitarra2.jpg);
+  background-image: url(../images/guitarra2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -523,7 +520,7 @@ textarea {
 
 #violin {
   background-color: grey;
-  background-image: url(/trabajo_final2/Musischool2/assets/images/Violin.jpg);
+  background-image: url(../images/Violin.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
