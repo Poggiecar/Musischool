@@ -25,14 +25,6 @@ html {
   overflow-x: hidden;
 }
 
-/* body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Kaisei Opti', serif;
-  
-} */
-
 header {
   position: fixed;
   top: 0;
@@ -93,9 +85,24 @@ button {
 }
 button:hover {
   background-color: #d44b0b;
-  transform:scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
+footer {
+  margin: 15px auto auto auto;
+  height: 100px;
+  background-color: #f4511ee0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+footer h3 {
+  font-size: 20pt;
+  margin: 20px;
+
+}
 .home {
   display: flex;
   align-items: center;
@@ -209,7 +216,8 @@ button:hover {
   color: #f95738;
   padding: 1rem;
   margin: 2rem 0;
-  background: rgba(255, 51, 153, 0.116);}
+  background: rgba(255, 51, 153, 0.116);
+}
 
 .propuestaEducativa-contenedor p {
   font-size: 1.5rem;
@@ -251,6 +259,80 @@ button:hover {
   color: #fff8dcab;
   font-size: 1.3rem;
 }
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.social-media {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 30px;
+  margin: 15px;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
+.fa-facebook {
+  color: #164bbb;
+}
+.fa-instagram {
+  color: #d6249f;
+}
+.fa-pinterest {
+  color: crimson;
+}
+.fa-twitter {
+  color: #00acee;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-pinterest,
+.fa-twitter {
+  font-size: larger;
+}
+
 #map-form-container {
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +340,6 @@ button:hover {
   justify-content: center;
   gap: 10px;
 }
-  
 
 #conciertos h1 {
   text-align: center;
@@ -319,10 +400,10 @@ button:hover {
   height: auto;
   box-shadow: 7px 7px 12px;
   border: 2px grey solid;
-  margin: 10px 115px 0px 115px
+  margin: 10px 115px 0px 115px;
 }
 
-/* media queries 991px */
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -379,14 +460,24 @@ button:hover {
   .heading {
     font-size: 3rem;
   }
-}
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
 
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  footer h3 {
+    font-size: 14pt;
+    margin: 10px;
+  }
+
+  .social-media{
+    gap: 15px;
+    font-size: 10pt;
+  }
+}
 input,
 textarea {
   display: block;
@@ -398,10 +489,12 @@ textarea {
   border-radius: 5px;
   border: 3px solid black;
 }
-#nombre:hover,#email:hover,#telefono:hover,#mensaje:hover{
+#nombre:hover,
+#email:hover,
+#telefono:hover,
+#mensaje:hover {
   border: 4px lightgray;
   border-style: groove;
-
 }
 
 #saxo {
@@ -435,115 +528,17 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
 }
-#saxo:hover,#piano:hover,#guitarra:hover,#violin:hover{
-  transform:scale(1.02,1.02);
-}
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+#saxo:hover,
+#piano:hover,
+#guitarra:hover,
+#violin:hover {
+  transform: scale(1.02, 1.02);
 }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-
-/* main {
+#map-form-container {
   display: flex;
-  flex-direction: column;
-  border: 3px solid black;
-
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
 }
-
-
-
-@media screen and (max-width: 500px) {
-  body{
-      background-image: none;
-  }
-}
-
-
-
-footer {
-  border: 3px solid black;
-
-}
-
-#formulario {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #3e8e41;
-} */
-
-/* #nosotros,
-#propuestaEducativa,
-#conciertos,
-#contacto {
-  height: 400px; /* ajusta la altura según sea necesario */
-/*margin: 20px 0;  ajusta el espacio entre cada sección según sea necesario */
-/*}
-
- */
