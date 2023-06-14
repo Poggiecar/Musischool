@@ -18,7 +18,7 @@ function changeColor(newColor) {
   const number = document.getElementById('number');
   const mensaje = document.getElementById('mensaje');
   const error = document.getElementById('error');
-  error.style.color='orange';
+  error.style.color='blue';
   
   const form= document.getElementById('formulario');
   form.addEventListener('submit',e=>{

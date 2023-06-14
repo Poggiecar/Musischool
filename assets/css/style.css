@@ -372,6 +372,9 @@ footer h3 {
 #conciertos span{
   font-size: 2rem;
 }
+#conciertos strong{
+  color: #f95738
+}
 #contacto h2 {
   text-align: center;
   font-size: 4rem;
@@ -381,13 +384,6 @@ footer h3 {
   background: rgba(255, 51, 153, 0.116);
 }
 
-#contacto p {
-  font-size: 1.5rem;
-  color: rgb(19, 6, 6);
-  padding: 0.5rem 0;
-  padding-top: 1rem;
-  line-height: 1.5;
-}
 
 #contacto p{
   text-align: center;
