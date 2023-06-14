@@ -1,5 +1,5 @@
 
-<h2>Musischool</h2>
+Musischool
 Este es el código HTML de la página web de Musischool, una escuela de música contemporánea. El código proporciona la estructura y los elementos necesarios para visualizar el contenido de la página, así como interactuar con ella.
 Estructura del proyecto
 El proyecto se compone de los siguientes archivos y directorios:
