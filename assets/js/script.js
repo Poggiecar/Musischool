@@ -31,7 +31,7 @@ form.addEventListener("submit", function(event) {
     return;
   }
 
-  if (emailInput.value === "") {
+  if (emailInput.value === "" ) {
     alert("Por favor, ingrese su correo electrónico.");
     return;
   }
