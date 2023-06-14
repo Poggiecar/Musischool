@@ -21,13 +21,14 @@
     <!--Header-->
     <header id="header">
       <input type="checkbox" name="" id="toggler" />
-      <label for="toggler" class="fas fa-bars"></label>
-      <a href="#" class="logo">Musischool<span>.</span></a>
+      <label for="toggler" class="fa-regular fa-circle-play fa-2xl" style="color: #ffffff;"></label>
+      <a href="#" class="logo"> Musischool<span>.</span></a>
       <nav id="nav" class="navbar">
         <a href="#nosotros" class="nav_nosotros">Nosotros</a>
         <a href="#propuestaEducativa">Propuesta Educativa</a>
         <a href="#conciertos">Conciertos</a>
         <a href="#contacto">Contacto</a>
+
       </nav>
     </header>
     <!-- fin Header-->
@@ -45,7 +46,7 @@
             música personalizadas y dedicadas para todos los niveles, calculados
             según las necesidades de cada alumno
           </p>
-          <a href="#" class="btn">INICIA CLASES</a>
+          <a href="#contacto" class="btn">INICIA CLASES</a>
         </div>
       </section>
       <div id="nosotros" class="nosotros">
@@ -119,33 +120,24 @@
 
       <div id="conciertos">
         <h1>Conciertos</h1>
+        <h2>Arte 22: Concierto de Música Argentina </h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          lobortis sodales nibh sed eleifend. Fusce fringilla lorem aliquet urna
-          egestas, a hendrerit sem placerat. Morbi quis magna in massa iaculis
-          lacinia. Ut laoreet dignissim tellus, sit amet vehicula massa
-          tincidunt ac. Vestibulum urna est, sodales quis venenatis sit amet,
-          dignissim a risukois. Sed sempefefefr lacus vel elementum efficitur.
-          Cras vehicula vel diam at auctor. Maecenas finibus, ligula non
-          sagittis semper, purus mi posuere nibh, pretium tempus ante leo et
-          ipsum. Integer ornare fermentum condimentum.
+          <b><span>17 noviembre, 2022 | 17:00 - 18:00</span> </b><br>
+          TEMPORADA ALTA | Termina un año de intenso trabajo, con cruces disciplinares y grandes aprendizajes. ¡Muchos motivos para celebrar! Por eso desde la Escuela  Musischool, cerramos el año con una programación abierta de actividades en el Campus Miguelete durante noviembre y diciembre: habrá conciertos, espectáculos, muestras audiovisuales y trabajos colectivos de muchas disciplinas, además de defensas de trabajos de graduación de estudiantes EAyP.<br>
+          Las actividades serán gratuitas y abiertas a todo público, sin inscripción previa.
         </p>
 
         <div class="container"></div>
       </div>
-
+  
       <div id="contacto">
         <h2>Contacto</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          lobortis sodales nibh sed eleifend. Fusce fringilla lorem aliquet urna
-          egestas, a hendrerit ssem placerat. Morbi quis magna in massa iaculis
-          lacinia. Ut laoreet gfdign sissim tellus, sit amet vehicula massa
-          tincidunt ac. Vegotstibulum urnefea est, sodales quis venenatis sit
-          amet, dignissim a risus3. Sed semper lacus vel elementum efficitur.
-          Cras vehicula vel diam at auctor. Maecenas finibus, ligula non
-          sagittis semper, purus mi posuere nibh, pretium tempus ante leo et
-          ipsum. Integer ornare fermentum condimentum.
+          <b>+54 11 5252-6400</b>
+          Adolfo Alsina 1994<br>
+          C.A.B.A. Buenos Aires<br>
+          Argentina
+
         </p>
 
         <div id="map-form-container">
@@ -163,7 +155,7 @@
                 type="text"
                 name="nombre"
                 id="nombre"
-                required
+                
                 placeholder="Ingrese su nombre aquí"
               />
             </div>
@@ -173,7 +165,7 @@
                 type="email"
                 autocomplete="email"
                 id="email"
-                required
+                
                 placeholder="ejemplo@ejemplo.com"
               />
             </div>
@@ -183,7 +175,7 @@
                 type="number"
                 name="telefono"
                 id="number"
-                required
+                
                 placeholder="Ingrese su número de teléfono aquí"
               />
             </div>
@@ -196,6 +188,7 @@
                 placeholder="Escribe el motivo de tu consulta"
               ></textarea>
             </div>
+            <div class="error" id="error"></div>
             <button class="button" type="submit" id="submit"><span>Enviar</span></button>
           </form>
         </div>
